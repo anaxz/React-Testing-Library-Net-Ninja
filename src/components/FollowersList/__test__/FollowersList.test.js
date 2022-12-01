@@ -16,7 +16,7 @@ describe("FollowersList", () => {
         // console.log("RUNS BEFORE EACH TEST")
         jest.mock("../../../__mocks__/axios")
     })
-
+    
     // beforeAll(() => {
     //     console.log("RUNS ONCE BEFORE ALL TESTS")
     // })
@@ -46,3 +46,7 @@ describe("FollowersList", () => {
         expect(followerDivElement).toBeInTheDocument();
     });
 })
+
+/** if you get this error: Warning: Each child in a list should have a unique "key" prop.
+ * to fix add key={index} into the element in this case div
+ */
