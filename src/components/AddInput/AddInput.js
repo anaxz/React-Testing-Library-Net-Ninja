@@ -9,6 +9,7 @@ function AddInput({
     const [todo, setTodo] = useState("")
 
     const addTodo = () => {
+    // destructure todos and then add {...} after it. not per item?
         if(!todo) return
         let updatedTodos = [
             ...todos,
