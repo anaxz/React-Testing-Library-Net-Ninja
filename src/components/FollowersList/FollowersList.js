@@ -24,7 +24,10 @@ export default function FollowersList() {
             <div>
                 {followers.map((follower, index) => (
                     // made it dynamic so the test only grabs one. Not multiple followers with same id
-                    <div className="follower-item" data-testid={`follower-item-${index}`}>
+                    <div className="follower-item" 
+                        data-testid={`follower-item-${index}`}
+                        key={index}
+                    >
                         <img src={follower.picture.large}/>
                         <div className="followers-details">
                             <div className="follower-item-name">

@@ -46,3 +46,7 @@ describe("FollowersList", () => {
  */
 
   /** screen.debug => console.logs the element */
+
+/** if you get this error: Warning: Each child in a list should have a unique "key" prop.
+ * to fix add key={index} into the element in this case div
+ */
