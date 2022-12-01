@@ -13,7 +13,7 @@ export default function FollowersList() {
             const { data } = await axios.get("https://randomuser.me/api/?results=5")
             setFollowers(data.results)
         }
-
+        // fetch users upon page landing
         fetchFollowers()
     }, []);
 
@@ -23,6 +23,7 @@ export default function FollowersList() {
         <div className="followerslist-container">
             <div>
                 {followers.map((follower, index) => (
+                    // made it dynamic so the test only grabs one. Not multiple followers with same id
                     <div className="follower-item" data-testid={`follower-item-${index}`}>
                         <img src={follower.picture.large}/>
                         <div className="followers-details">
