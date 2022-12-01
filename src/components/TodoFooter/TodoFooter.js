@@ -14,3 +14,6 @@ function TodoFooter({
 }
 
 export default TodoFooter
+
+// {numberOfIncompleteTasks === 1 ? "task" : "tasks"} left
+// this just checks whether set text as plural or not
